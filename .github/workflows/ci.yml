@@ -16,7 +16,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - uses: omelkonian/setup-agda@test
+      - uses: omelkonian/setup-agda@master
         with:
           agda-version: ${{ matrix.agda }}
           stdlib-version: ${{ matrix.stdlib }}
