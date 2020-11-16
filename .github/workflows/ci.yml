@@ -10,9 +10,9 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ubuntu-latest] #, macOS-latest]
-        agda: ['latest'] #, '2.6.0']
-        stdlib: ['latest'] #, '1.2']
+        os: [ubuntu-latest, macOS-latest]
+        agda: [latest, '2.6.0']
+        stdlib: [latest, '1.2']
 
     steps:
       - uses: actions/checkout@v2
@@ -21,5 +21,7 @@ jobs:
           agda-version: ${{ matrix.agda }}
           stdlib-version: ${{ matrix.stdlib }}
           libraries: 'omelkonian:formal-prelude,omelkonian:formal-bitcoin'
-      - shell: bash
-        run: agda Test.agda
+          main: Test
+          token: ${{ secrets.GITHUB_TOKEN }}
+          # css: test.css
+
