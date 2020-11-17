@@ -7,5 +7,5 @@ open import Prelude.DecEq
 open import Prelude.Decidable
 
 _ : (¬ ¬ ((true , true) ≡ (true , true)))
-  × (8 ≡ 18 ∸ 10)
+  × (18 ≡ 28 ∸ 10)
 _ = auto
