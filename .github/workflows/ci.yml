@@ -20,7 +20,7 @@ jobs:
         with:
           agda-version: ${{ matrix.agda }}
           stdlib-version: ${{ matrix.stdlib }}
-          libraries: 'omelkonian:formal-prelude,omelkonian:formal-bitcoin'
+          libraries: 'omelkonian:formal-prelude'
           main: Example/Test
           token: ${{ secrets.GITHUB_TOKEN }}
 
