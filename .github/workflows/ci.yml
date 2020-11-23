@@ -23,9 +23,9 @@ jobs:
           agda-version: ${{ matrix.agda }}
           stdlib-version: ${{ matrix.stdlib }}
           libraries: |
-            omelkonian:formal-prelude
-            omelkonian:formal-bitcoin
-            omelkonian:formal-bitml
+            omelkonian/formal-prelude
+            omelkonian/formal-bitcoin#54c4
+            omelkonian/formal-bitml#SRC-paper
           main: Example/Test
           token: ${{ secrets.GITHUB_TOKEN }}
 
