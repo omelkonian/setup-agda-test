@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2.3.1
-      - uses: omelkonian/setup-agda@v0.1
+      - uses: omelkonian/setup-agda@master
         with:
           agda-version: 2.6.1
           stdlib-version: 1.3
@@ -18,5 +18,6 @@ jobs:
             omelkonian/formal-bitml#SRC-paper
           main: Example/Test
           token: ${{ secrets.GITHUB_TOKEN }}
+          ribbon: true
           rts: -K256M -H1G -M8G -A128M
 
