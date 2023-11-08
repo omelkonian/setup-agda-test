@@ -16,6 +16,7 @@ jobs:
             omelkonian/formal-bitcoin#54c4
             omelkonian/formal-bitml#SRC-paper
           main: Example/Test
+          deploy: ${{ github.ref == 'refs/heads/master' }}
           token: ${{ secrets.GITHUB_TOKEN }}
           ribbon: true
           rts: -K256M -H1G -M8G -A128M
