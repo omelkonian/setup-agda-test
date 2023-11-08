@@ -18,5 +18,6 @@ jobs:
           main: Example/Test
           token: ${{ secrets.GITHUB_TOKEN }}
           ribbon: true
+          deploy: false
           rts: -K256M -H1G -M8G -A128M
           measure-typechecking: true
