@@ -16,7 +16,8 @@ jobs:
             omelkonian/formal-prelude#c10fe94
             omelkonian/formal-bitcoin#54c4
             omelkonian/formal-bitml#SRC-paper
-          main: Example/Test
+          dir: Example
+          main: Test
           deploy: ${{ github.ref == 'refs/heads/master' }}
           token: ${{ secrets.GITHUB_TOKEN }}
           ribbon: true

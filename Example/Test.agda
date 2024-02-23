@@ -1,4 +1,4 @@
-module Example.Test where
+module Test where
 
-open import Example.Short
-open import Example.Long
+open import Short
+open import Long

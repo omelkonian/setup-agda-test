@@ -1,4 +1,4 @@
-module Example.Short where
+module Short where
 
 open import Prelude.Init
 open import Prelude.DecEq

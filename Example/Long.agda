@@ -1,5 +1,5 @@
 {-# OPTIONS --allow-unsolved-metas #-}
-module Example.Long where
+module Long where
 
 open import Agda.Builtin.Unit
 open import Agda.Builtin.Nat
