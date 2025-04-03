@@ -12,10 +12,10 @@ jobs:
         with:
           agda-version: 2.6.3
           stdlib-version: 1.7.2
-          libraries:
-            - omelkonian/formal-prelude#c10fe94
-            - omelkonian/formal-bitcoin#54c4
-            - omelkonian/formal-bitml#SRC-paper
+          libraries: |
+            omelkonian/formal-prelude#c10fe94
+            omelkonian/formal-bitcoin#54c4
+            omelkonian/formal-bitml#SRC-paper
           dir: Example
           main: Test
           deploy: ${{ github.ref == 'refs/heads/master' }}
