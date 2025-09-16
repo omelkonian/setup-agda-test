@@ -1,14 +1,14 @@
 name: build-test
 on:
   # schedule: [{cron: '0 0 * * *'}]
-  push: {branches: master}
+  push: {branches: main}
   pull_request:
 jobs:
   install-agda:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: omelkonian/setup-agda@master
+      - uses: omelkonian/setup-agda@main
         with:
           agda-version: 2.6.3
           stdlib-version: 1.7.2
@@ -16,9 +16,10 @@ jobs:
             omelkonian/formal-prelude#c10fe94
             omelkonian/formal-bitcoin#54c4
             omelkonian/formal-bitml#SRC-paper
+            agda/agda-pretty#v1.0
           dir: Example
           main: Test
-          deploy: ${{ github.ref == 'refs/heads/master' }}
+          deploy: ${{ github.ref == 'refs/heads/main' }}
           token: ${{ secrets.GITHUB_TOKEN }}
           ribbon: true
           rts: -K256M -H1G -M8G -A128M
