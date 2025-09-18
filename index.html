@@ -1,11 +1,12 @@
 <!DOCTYPE HTML>
 <html><head><meta charset="utf-8"><title>Test</title><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css'/><style>.github-fork-ribbon:before { background-color: #333; }</style><link rel="stylesheet" href="css/Agda.css"></head><body><a class='github-fork-ribbon'href='https://github.com/omelkonian/setup-agda-test/tree/main/'data-ribbon='Source code on Github' title='Source code on Github'>Source code on Github</a><pre class="Agda"><a id="1" class="Keyword">module</a> <a id="8" href="Test.html" class="Module">Test</a> <a id="13" class="Keyword">where</a>
 
-<a id="20" class="Comment">-- ** this is slow to typecheck because Short draws in a lot of dependencies</a>
-<a id="97" class="Keyword">open</a> <a id="102" class="Keyword">import</a> <a id="109" href="Short.html" class="Module">Short</a>
+<a id="20" class="Comment">-- slow to typecheck, because `Short` draws in a lot of dependencies</a>
+<a id="89" class="Keyword">open</a> <a id="94" class="Keyword">import</a> <a id="101" href="Short.html" class="Module">Short</a>
 
-<a id="116" class="Comment">-- ** this is slow to typecheck because Long itself stress-tests the typechecker</a>
-<a id="197" class="Keyword">open</a> <a id="202" class="Keyword">import</a> <a id="209" href="Long.html" class="Module">Long</a>
+<a id="108" class="Comment">-- slow to typecheck, because `Long` itself stress-tests the typechecker</a>
+<a id="181" class="Keyword">open</a> <a id="186" class="Keyword">import</a> <a id="193" href="Long.html" class="Module">Long</a>
 
-<a id="215" class="Comment">-- ** c.f. CI-deployed `typecheck.time` file that highlights this difference</a>
+<a id="199" class="Comment">-- c.f. file `typecheck.time` that highlights differences in each file&#39;s</a>
+<a id="272" class="Comment">--      typechecking time (deployed on CI via the `measure-typechecking.sh` script)</a>
 </pre></body></html>
