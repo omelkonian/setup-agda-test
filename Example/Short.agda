@@ -1,11 +1,12 @@
 {-# OPTIONS --with-K #-}
 module Short where
 
-open import Prelude.Init
-open import Prelude.DecEq.Core
-open import Prelude.DecEq.WithK
-open import Prelude.Decidable
+open import Class.Prelude
+open import Class.DecEq
+open import Class.DecEq.WithK
+open import Class.Decidable
+open import Class.HasAdd
 
 _ : (¬ ¬ (true , true) ≡ (true , true))
-  × (8 ≡ 58 ∸ 50)
+  × (50 + 8 ≡ 58)
 _ = auto
